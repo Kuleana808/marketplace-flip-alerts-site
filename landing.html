@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace Flip Alerts | Curated Facebook Marketplace Deals for Resellers</title>
+  <meta name="description" content="Curated Facebook Marketplace flip alerts for resellers. Get hand-picked local deals with resale range and rough spread without spending hours searching.">
+  <link rel="canonical" href="https://operator.fyi/marketplace-flip-alerts">
+  <meta property="og:title" content="Marketplace Flip Alerts">
+  <meta property="og:description" content="We send you the best local Facebook Marketplace flip opportunities worth checking before you waste hours refreshing search results.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://operator.fyi/marketplace-flip-alerts">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Marketplace Flip Alerts">
+  <meta name="twitter:description" content="Curated Facebook Marketplace flip opportunities for local resellers and sourcing operators.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0b0f14;
+      color: #eef2f7;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    .pill {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 999px;
+      color: #99f6e4;
+      background: rgba(153,246,228,0.08);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+    .hero {
+      padding: 72px 0 56px;
+      background: radial-gradient(circle at top right, rgba(34,197,94,0.16), transparent 28%), radial-gradient(circle at top left, rgba(59,130,246,0.18), transparent 22%);
+    }
+    h1 {
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.05;
+      margin: 18px 0 18px;
+      max-width: 860px;
+      letter-spacing: -1.5px;
+    }
+    .subhead {
+      font-size: 20px;
+      color: #c7d2de;
+      max-width: 760px;
+      margin-bottom: 32px;
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 22px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform .15s ease, opacity .15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); opacity: 0.96; }
+    .btn-primary { background: #22c55e; color: #04110a; }
+    .btn-secondary { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); color: #eef2f7; }
+    .micro {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 18px;
+      margin-top: 36px;
+    }
+    .card, .price-card, .sample, .faq, .section-panel {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+    }
+    .card {
+      padding: 22px;
+    }
+    .stat-num {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .stat-label { color: #9fb0c3; font-size: 14px; }
+    section { padding: 26px 0 18px; }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 18px;
+      letter-spacing: -0.7px;
+    }
+    .section-copy {
+      font-size: 18px;
+      color: #c7d2de;
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+    .grid-3, .grid-2 {
+      display: grid;
+      gap: 18px;
+    }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .card h3, .price-card h3, .sample h3 { font-size: 22px; margin-bottom: 12px; }
+    .card p, .price-card p, .faq p, .sample p { color: #c7d2de; }
+    ul { padding-left: 18px; color: #dbe6f2; }
+    li { margin-bottom: 10px; }
+    .sample {
+      padding: 24px;
+      margin-top: 18px;
+    }
+    .sample-pre {
+      margin-top: 12px;
+      white-space: pre-wrap;
+      background: rgba(2,6,23,0.55);
+      border-radius: 14px;
+      padding: 18px;
+      color: #d7ffe6;
+      border: 1px solid rgba(255,255,255,0.06);
+      font-size: 14px;
+    }
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 18px;
+      margin-top: 14px;
+    }
+    .price-card {
+      padding: 26px;
+    }
+    .featured {
+      border-color: rgba(34,197,94,0.5);
+      box-shadow: 0 0 0 1px rgba(34,197,94,0.2) inset;
+    }
+    .price {
+      font-size: 44px;
+      font-weight: 800;
+      margin: 12px 0;
+    }
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      background: rgba(34,197,94,0.12);
+      color: #bbf7d0;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .faq {
+      padding: 22px;
+    }
+    .faq h3 { margin-bottom: 10px; }
+    .intake-form {
+      padding: 24px;
+      margin-top: 18px;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+    .form-group label {
+      font-size: 14px;
+      color: #dbe6f2;
+      font-weight: 600;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(2,6,23,0.72);
+      color: #eef2f7;
+      padding: 14px 14px;
+      font: inherit;
+    }
+    .form-note {
+      color: #94a3b8;
+      font-size: 13px;
+      margin-top: 12px;
+    }
+    .footer-cta {
+      padding: 24px;
+      margin: 28px 0 60px;
+      text-align: center;
+    }
+    .footer-cta h2 { margin-bottom: 10px; }
+    footer {
+      padding: 0 0 48px;
+      color: #7f90a3;
+      font-size: 14px;
+    }
+    @media (max-width: 860px) {
+      .stats, .grid-3, .grid-2, .pricing { grid-template-columns: 1fr; }
+      .hero { padding-top: 52px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <span class="pill">Founding pilot • ultra-lean concierge MVP</span>
+      <h1>Stop refreshing Facebook Marketplace all day.</h1>
+      <p class="subhead">We send you the local flip opportunities actually worth checking: item, asking price, resale range, rough spread, and why it looks promising. You focus on closing deals, not endless searching.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:brent@operator.fyi?subject=Marketplace%20Flip%20Alerts%20pilot&body=I%20want%20to%20join%20the%20Marketplace%20Flip%20Alerts%20pilot.%0A%0AMetro:%0ACategories:%0AMinimum%20profit%20spread:%0AHow%20you%20source%20today:">Apply for the pilot</a>
+        <a class="btn btn-secondary" href="#pricing">See founding pricing</a>
+      </div>
+      <p class="micro">Best for local flippers, appliance/furniture resellers, electronics buyers, and small used inventory operators.</p>
+
+      <div class="stats">
+        <div class="card">
+          <div class="stat-num">Less search</div>
+          <div class="stat-label">Spend less time manually hunting listings</div>
+        </div>
+        <div class="card">
+          <div class="stat-num">More signal</div>
+          <div class="stat-label">Each alert includes a resale angle, not just a link dump</div>
+        </div>
+        <div class="card">
+          <div class="stat-num">Faster sourcing</div>
+          <div class="stat-label">Get curated opportunities for your metro and categories</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>What you actually get</h2>
+      <p class="section-copy">This is not another generic data product. This is a live sourcing edge for people who already know how to buy and resell — but do not want to babysit Marketplace all day.</p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Curated alerts</h3>
+          <p>We watch for promising listings in your chosen category and metro, then send only the deals that look worth your attention.</p>
+        </div>
+        <div class="card">
+          <h3>Quick margin view</h3>
+          <p>Each alert includes the asking price, likely resale range, and rough spread so you can judge whether it is worth pursuing.</p>
+        </div>
+        <div class="card">
+          <h3>Category focus</h3>
+          <p>Furniture, appliances, electronics, tools, baby gear, or another niche you already understand. We start narrow and make it useful fast.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Why this exists</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>The problem</h3>
+          <ul>
+            <li>Saved searches are noisy.</li>
+            <li>Good deals disappear fast.</li>
+            <li>Most people waste hours checking junk listings.</li>
+            <li>Margin only becomes obvious after too much manual work.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>The wedge</h3>
+          <ul>
+            <li>Local sourcing is messy.</li>
+            <li>Buyers care about profit, not dashboards.</li>
+            <li>A smaller but sharper alert feed is worth paying for.</li>
+            <li>Concierge delivery lets us learn PMF before full software.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sample alert</h2>
+      <div class="sample">
+        <h3>What a pilot alert looks like</h3>
+        <p>Lean, fast, and decision-oriented.</p>
+        <div class="sample-pre">Category: Appliances
+Metro: Phoenix East Valley
+Item: Whirlpool washer + dryer set
+Ask: $180
+Likely resale range: $450–$650 if clean and working
+Rough gross spread: $270–$470 before pickup/refurb costs
+Why it looks good: underpriced vs common local pair pricing, clean photos, seller moving this week, matching set, strong demand category
+Link: [source listing]
+Recommendation: worth messaging within 10 minutes if you can test same day</div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Founding pilot pricing</h2>
+      <p class="section-copy">We are optimizing for fast proof, not maximum complexity. The first goal is to get real users paying for real sourcing help.</p>
+      <div class="pricing">
+        <div class="price-card">
+          <div class="tag">Fastest yes</div>
+          <h3>7-day pilot</h3>
+          <div class="price">$49</div>
+          <p>One metro. One category. Enough to see whether the signal is useful for your buying style.</p>
+          <ul>
+            <li>Curated alert delivery</li>
+            <li>One category focus</li>
+            <li>One local metro</li>
+            <li>Direct feedback loop</li>
+          </ul>
+        </div>
+        <div class="price-card featured">
+          <div class="tag">Best for early adopters</div>
+          <h3>Founding monthly</h3>
+          <div class="price">$149/mo</div>
+          <p>For operators who already flip consistently and want an ongoing edge in one category and market.</p>
+          <ul>
+            <li>Ongoing curated alerts</li>
+            <li>Resale range + rough spread</li>
+            <li>Category and metro tuning</li>
+            <li>Priority on future product features</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Who this is for</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Good fit</h3>
+          <ul>
+            <li>You already resell locally.</li>
+            <li>You know your categories.</li>
+            <li>You want faster sourcing, not more browsing.</li>
+            <li>You care about profitable leads, not generic listing dumps.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Not a fit</h3>
+          <ul>
+            <li>You have never flipped anything before.</li>
+            <li>You need guaranteed profits on every lead.</li>
+            <li>You want nationwide shipping arbitrage software on day one.</li>
+            <li>You want a giant reseller operating system today.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid-2">
+        <div class="faq">
+          <h3>Is this software?</h3>
+          <p>Not yet. It is a concierge MVP designed to get to proof and first dollars faster. If the pilot works, the best parts get automated.</p>
+        </div>
+        <div class="faq">
+          <h3>How are alerts delivered?</h3>
+          <p>Email first. Telegram or SMS can be added for pilot users who need speed.</p>
+        </div>
+        <div class="faq">
+          <h3>What categories can I request?</h3>
+          <p>Start with categories you already understand well: appliances, furniture, tools, electronics, baby gear, or another local resale niche.</p>
+        </div>
+        <div class="faq">
+          <h3>How do I join?</h3>
+          <p>Use the pilot request form below. It pre-fills the core details we need so we can decide quickly whether the pilot is a match.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="intake-form section-panel" id="apply">
+      <h2>Request pilot access</h2>
+      <p class="section-copy">Tell us your market, categories, and what counts as a worthwhile flip. The form builds the email for you so you do not have to guess what to send.</p>
+      <form id="pilotForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="metro">Primary metro</label>
+            <input id="metro" name="metro" type="text" placeholder="Phoenix East Valley" required>
+          </div>
+          <div class="form-group">
+            <label for="categories">Categories</label>
+            <input id="categories" name="categories" type="text" placeholder="Appliances, furniture, electronics" required>
+          </div>
+          <div class="form-group">
+            <label for="spread">Minimum profit spread</label>
+            <input id="spread" name="spread" type="text" placeholder="$80+ per flip" required>
+          </div>
+          <div class="form-group">
+            <label for="delivery">Preferred delivery</label>
+            <select id="delivery" name="delivery">
+              <option>Email</option>
+              <option>Telegram</option>
+              <option>SMS</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="workflow">How do you source today?</label>
+            <textarea id="workflow" name="workflow" rows="4" placeholder="Saved searches, manual scrolling, Discords, other tools, etc."></textarea>
+          </div>
+        </div>
+        <div class="cta-row" style="margin-top:18px; margin-bottom:0;">
+          <button class="btn btn-primary" type="submit">Build my pilot request</button>
+          <a class="btn btn-secondary" href="mailto:brent@operator.fyi?subject=Marketplace%20Flip%20Alerts%20pilot">Email directly instead</a>
+        </div>
+        <p class="form-note">No backend yet. This opens a pre-filled email to brent@operator.fyi with your pilot details.</p>
+      </form>
+    </section>
+
+    <section class="footer-cta section-panel">
+      <h2>Want the first shot at profitable local leads?</h2>
+      <p class="section-copy" style="margin:0 auto 20px;">We are prioritizing pilot users with clear category focus and active buying behavior.</p>
+      <a class="btn btn-primary" href="#apply">Start your pilot request</a>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>Operator pilot offer. Built for speed-to-signal, not feature theater.</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('pilotForm');
+    if (form) {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const data = new FormData(form);
+        const subject = 'Marketplace Flip Alerts pilot';
+        const body = [
+          'I want to join the Marketplace Flip Alerts pilot.',
+          '',
+          'Name: ' + (data.get('name') || ''),
+          'Email: ' + (data.get('email') || ''),
+          'Primary metro: ' + (data.get('metro') || ''),
+          'Categories: ' + (data.get('categories') || ''),
+          'Minimum profit spread: ' + (data.get('spread') || ''),
+          'Preferred delivery: ' + (data.get('delivery') || ''),
+          'How I source today: ' + (data.get('workflow') || '')
+        ].join('\n');
+        window.location.href = 'mailto:brent@operator.fyi?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      });
+    }
+  </script>
+</body>
+</html>
