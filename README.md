@@ -2,6 +2,11 @@
 
 AI-native sourcing product for local flippers.
 
+Current public category pages:
+- appliances.html
+- furniture.html
+- phone-tech.html
+
 Tagline:
 Find underpriced local flips before everyone else.
 
