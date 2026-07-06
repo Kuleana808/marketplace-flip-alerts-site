@@ -16,6 +16,15 @@ Reason this wins right now:
 4. We can deliver a useful pilot before building a full product.
 5. It can evolve into alerts software, comp scoring, and a seller dashboard later.
 
+## Brand/trust rule
+The GitHub Pages URL is a temporary staging surface, not the long-term buyer-facing brand.
+For any serious outreach beyond close contacts or warm conversations, move this offer onto a branded custom domain or subdomain before expecting strong conversion.
+A reseller is much more likely to trust:
+- a clean branded domain
+- a direct founder conversation
+- a sample alert or live proof
+than a raw github.io URL by itself.
+
 ## Product
 Marketplace Flip Alerts
 
@@ -51,13 +60,35 @@ They buy:
 - less time wasted searching
 - faster sourcing
 
+## Founder-mode launch strategy
+We should use a hybrid, not a pure paid-only or pure free approach.
+
+Recommended sequence:
+1. Run it ourselves first for a few days to generate real sample alerts and sharpen category judgment.
+2. Give a very limited free founder beta to 3-5 qualified users only.
+3. Convert the best free users into paid pilots fast.
+4. Keep the standard paid offer visible so we do not anchor the market at zero.
+
+Why:
+- running it ourselves creates real proof and sample output
+- a tiny free beta reduces trust friction
+- unlimited free use attracts low-intent users and slows learning
+- we still need to learn willingness to pay early
+
 ## Founding pilot pricing
-Recommended starting prices:
+Standard offer:
 - $49 for 7-day trial pilot
 - $149/month single category + one metro
 - $299/month multiple categories or metros
 
-We can discount the first 3 pilot users if needed, but do not start free unless absolutely necessary.
+Founder beta policy:
+- free for 3-5 highly qualified users only
+- must already flip actively in a clear category + metro
+- beta lasts 5-7 days max
+- goal is proof, testimonials, and conversion to paid pilot
+
+Rule:
+Do not run an open-ended free plan before we see conversion behavior.
 
 ## Positioning
 Bad:

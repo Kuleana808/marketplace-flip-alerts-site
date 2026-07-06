@@ -6,6 +6,7 @@ Get to first dollars and first real usage feedback with the smallest possible pr
 ## Week 1 success definition
 Any of these counts as meaningful progress:
 - 1 paying pilot user
+- 1-3 active founder beta users who actually engage with alerts
 - 3 serious pilot conversations
 - 5 strong objections that clearly sharpen the offer
 - 1 user who asks for faster delivery, more categories, or broader geographic coverage
@@ -30,6 +31,8 @@ Any of these counts as meaningful progress:
 - No feature work that does not improve conversion or delivery quality.
 - Stay on one wedge: profitable sourcing alerts.
 - Use concierge/manual operations to learn fast.
+- Treat the current github.io page as a staging asset, not a final trust surface.
+- Before wider cold distribution, move the page to a branded custom domain or subdomain.
 
 ## Likely next build after signal
 - Telegram alert bot
